@@ -1,6 +1,0 @@
-(** @canonical Effio.Aio *)
-module Aio = Effio__Aio
-
-
-(** @canonical Effio.Echo *)
-module Echo = Effio__Echo
