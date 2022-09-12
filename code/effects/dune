@@ -1,0 +1,9 @@
+(executable
+ (name echo_unix)
+ (modules echo_unix )
+ (libraries effio))
+
+(executable
+ (name echo_async)
+ (modules echo_async)
+ (libraries effio))

@@ -1,0 +1,29 @@
+(executable
+ (name sum_of_array)
+ (modules sum_of_array)
+ (libraries domainslib))
+
+(executable
+ (name mandelbrot)
+ (modules mandelbrot))
+
+(executable
+ (name mandelbrot_multicore)
+ (modules mandelbrot_multicore)
+ (libraries domainslib))
+
+(executable
+ (name counter_mutable)
+ (modules counter_mutable))
+
+(executable
+ (name counter_mutable_parallel)
+ (modules counter_mutable_parallel))
+
+(executable
+ (name counter_atomic_parallel)
+ (modules counter_atomic_parallel))
+
+(executable
+ (name counter_mutable_lock_parallel)
+ (modules counter_mutable_lock_parallel))

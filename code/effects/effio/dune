@@ -1,0 +1,4 @@
+(library
+ (name effio)
+ (libraries unix))
+
