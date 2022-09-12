@@ -4,7 +4,10 @@
 (generate_opam_files true)
 
 (source
- (github realworldocaml/mdx))
+ (github Sudha247/ocaml5-tutorial-icfp-22))
+
+(authors "Sudha Parimala" "Marek Kubica")
+(maintainers "Sudha Parimala" "Marek Kubica")
 
 (package
  (name ocaml5-tutorial-icfp-22)
