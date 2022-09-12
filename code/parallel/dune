@@ -4,6 +4,11 @@
  (libraries domainslib))
 
 (executable
+ (name random_dls)
+ (modules random_dls)
+ (libraries domainslib))
+
+(executable
  (name mandelbrot)
  (modules mandelbrot))
 

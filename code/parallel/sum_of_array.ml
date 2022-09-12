@@ -1,6 +1,6 @@
 module Task = Domainslib.Task
 
-let num_domains = try int_of_string Sys.argv.(1) with _ -> 3
+let num_domains = Domain.recommended_domain_count - 1
 let n = try int_of_string Sys.argv.(2) with _ -> 1000000
 
 (** Empty Array*)
