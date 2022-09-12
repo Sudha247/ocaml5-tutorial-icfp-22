@@ -24,3 +24,6 @@ build: [
   ]
 ]
 dev-repo: "git+https://github.com/realworldocaml/mdx.git"
+pin-depends: [
+  [ "domainslib.dev" "git+https://github.com/ocaml-multicore/domainslib.git#master" ]
+]
