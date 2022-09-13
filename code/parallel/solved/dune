@@ -1,0 +1,14 @@
+(executable
+ (name matrix_multiplication_multicore)
+ (modules matrix_multiplication_multicore)
+ (libraries domainslib))
+
+(executable
+ (name nqueens)
+ (modules nqueens)
+ (libraries domainslib))
+
+(executable
+ (name tak)
+ (modules tak)
+ (libraries domainslib))
