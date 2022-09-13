@@ -14,7 +14,13 @@ let main () =
     exnc = raise;
     effc = fun (type a) (eff: a t) ->
       match eff with
-      | E -> let v = "2" in Some (fun (k: (a, _) continuation) ->
-        print_string "1"; continue k v; print_string "4")
+      | E ->
+          Some (fun (k: (a, _) continuation) ->
+           print_string "1";
+           continue k "2";
+           print_endline "4")
       | _ -> None
   }
+
+let () =
+  main ()

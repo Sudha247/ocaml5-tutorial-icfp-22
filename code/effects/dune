@@ -9,3 +9,15 @@
  (modules echo_async)
  (package ocaml5-tutorial-icfp-22)
  (libraries effio))
+
+(executable
+ (public_name string_effect)
+ (modules string_effect)
+ (package ocaml5-tutorial-icfp-22)
+ (libraries effio))
+
+(executable
+ (public_name sum_effect)
+ (modules sum_effect)
+ (package ocaml5-tutorial-icfp-22)
+ (libraries effio))
