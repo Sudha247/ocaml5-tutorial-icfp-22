@@ -1,0 +1,11 @@
+(executable
+ (public_name file_eio)
+ (modules file_eio)
+ (package ocaml5-tutorial-icfp-22)
+ (libraries eio_main))
+
+(executable
+ (public_name file_lwt)
+ (modules file_lwt)
+ (package ocaml5-tutorial-icfp-22)
+ (libraries lwt.unix lwt))

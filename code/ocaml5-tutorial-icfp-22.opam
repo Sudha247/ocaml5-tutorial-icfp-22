@@ -9,6 +9,9 @@ depends: [
   "dune" {>= "3.3"}
   "ocaml" {>= "5.0.0~alpha1"}
   "domainslib"
+  "eio"
+  "eio_main"
+  "lwt"
   "odoc" {with-doc}
 ]
 build: [

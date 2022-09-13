@@ -15,4 +15,7 @@
  (depends
   (ocaml
    (>= 5.0.0~alpha1))
-  domainslib))
+  domainslib
+  eio
+  eio_main
+  lwt))
