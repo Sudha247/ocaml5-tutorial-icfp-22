@@ -1,9 +1,11 @@
 (executable
- (name echo_unix)
- (modules echo_unix )
+ (public_name echo_unix)
+ (modules echo_unix)
+ (package ocaml5-tutorial-icfp-22)
  (libraries effio))
 
 (executable
- (name echo_async)
+ (public_name echo_async)
  (modules echo_async)
+ (package ocaml5-tutorial-icfp-22)
  (libraries effio))
