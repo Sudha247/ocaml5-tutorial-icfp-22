@@ -32,6 +32,7 @@
 (executable
  (name matrix_multiplication)
  (modules matrix_multiplication)
+ (flags :standard -w -21-27)
  (libraries domainslib))
 
 (executable
