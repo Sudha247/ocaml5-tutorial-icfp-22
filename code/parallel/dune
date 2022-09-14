@@ -33,3 +33,9 @@
  (name matrix_multiplication)
  (modules matrix_multiplication)
  (libraries domainslib))
+
+(executable
+ (name tak)
+ (modules tak)
+ (flags :standard -w -27-32-39)
+ (libraries domainslib))
