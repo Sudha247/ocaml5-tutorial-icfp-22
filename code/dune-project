@@ -18,4 +18,5 @@
   domainslib
   eio
   eio_main
-  lwt))
+  lwt
+  runtime_events_tools))

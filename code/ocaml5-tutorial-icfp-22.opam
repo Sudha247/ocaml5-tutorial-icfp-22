@@ -12,6 +12,7 @@ depends: [
   "eio"
   "eio_main"
   "lwt"
+  "runtime_events_tools"
   "odoc" {with-doc}
 ]
 build: [
