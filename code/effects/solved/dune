@@ -1,0 +1,5 @@
+(executable
+ (public_name exceptions)
+ (modules exceptions)
+ (package ocaml5-tutorial-icfp-22)
+ (libraries effio))
