@@ -13,6 +13,10 @@
  (modules counter_mutable))
 
 (executable
+ (name new_domain)
+ (modules new_domain))
+
+(executable
  (name counter_mutable_parallel)
  (modules counter_mutable_parallel))
 
