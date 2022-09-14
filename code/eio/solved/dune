@@ -1,0 +1,4 @@
+(executable
+ (name echo_eio)
+ (modules echo_eio)
+ (libraries eio_main))

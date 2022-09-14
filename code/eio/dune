@@ -9,3 +9,10 @@
  (modules file_lwt)
  (package ocaml5-tutorial-icfp-22)
  (libraries lwt.unix lwt))
+
+(executable
+ (public_name echo_eio)
+ (modules echo_eio)
+ (package ocaml5-tutorial-icfp-22)
+ (flags :standard -w -27)
+ (libraries eio_main))
