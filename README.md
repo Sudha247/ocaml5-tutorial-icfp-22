@@ -17,3 +17,14 @@ This repository contains the source code for the OCaml 5 tutorial session at ICF
 ### Slides
 
 The slides can be found [here](https://docs.google.com/presentation/d/17P1FbV6msoeTMWxbwGFisBgGJyW-q8GcDt2EgpcDR0w/edit?usp=sharing).
+
+### Interactive usage
+
+To use the libraries declared, you can use the interactive toplevel UTop. You
+need to install it separately and can then instruct the build system to start
+it with all the libraries like Domainslib loaded:
+
+```
+λ opam install utop
+λ dune utop
+```
