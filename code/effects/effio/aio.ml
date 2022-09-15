@@ -13,7 +13,6 @@ type sockaddr = Unix.sockaddr
 type msg_flag = Unix.msg_flag
 
 type _ Effect.t += Fork  : (unit -> unit) -> unit Effect.t
-type _ Effect.t += Yield : unit Effect.t
 type _ Effect.t += Accept : file_descr -> (file_descr * sockaddr) Effect.t
 type _ Effect.t += Recv : file_descr * bytes * int * int * msg_flag list -> int Effect.t
 type _ Effect.t += Send : file_descr * bytes * int * int * msg_flag list -> int Effect.t
@@ -21,9 +20,6 @@ type _ Effect.t += Sleep : float -> unit Effect.t
 
 let fork f =
   perform (Fork f)
-
-let yield () =
-  perform Yield
 
 let accept fd =
   perform (Accept fd)
@@ -174,10 +170,7 @@ let run main =
         schedule st);
       effc = fun (type a) (e : a Effect.t) ->
         match e with
-        | Yield -> Some (fun (k : (a, _) continuation) ->
-            enqueue_thread st k ();
-            schedule st)
-        | Fork f -> Some (fun k ->
+        | Fork f -> Some (fun (k : (a, _) continuation) ->
             enqueue_thread st k ();
             fork st f)
         | Accept fd -> Some (fun k ->
